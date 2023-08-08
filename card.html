@@ -10,7 +10,7 @@
     <meta name="keywords" content="" />
     <!-- stylesheets -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="card.css" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.png" />
     <link
@@ -97,16 +97,79 @@
     </header>
     <!-- end of nav  -->
     <div id="site-content">
-      <div class="heading">
-        <h1>This Is the Tagline</h1>
-        <h2>South Jersey</h2>
+      <!-- Card -->
+      <div class="card">
+        <div class="top-box">
+          <div class="title-box">
+            <p class="name">Mariano</p>
+            <p class="realtor">cantero</p>
+          </div>
+          <div class="image-box">
+            <img src="./images/headshot-dcantero.png" alt="" class="headshot" />
+          </div>
+        </div>
+        <!-- INFO -->
+        <div class="info-box">
+          <p class="info">
+            <span class="letter">C </span><span class="vertical-line"></span
+            ><span class="listed-item">609 941 4579</span>
+          </p>
+          <p class="info">
+            <span class="letter">E </span><span class="vertical-line"></span>
+            <a href="mailto:exp@dcantero.com" class="info-links"
+              >mexiclin@msn.com</a
+            >
+          </p>
+          <p class="info">
+            <span class="letter">W</span><span class="vertical-line"></span
+            ><a href="https://mexiclin.com" class="info-links">mexiclin.com</a>
+          </p>
+          <p class="info">
+            <span class="letter">Z </span><span class="vertical-line"></span
+            ><span class="listed-item">08081</span>
+          </p>
+        </div>
+        <!-- images -->
+        <div class="premiere-box">
+          <img src="./images/Premiere-Exp.png" alt="" class="premiere" />
+        </div>
       </div>
-      <div id="map"></div>
-      <script src="./js/map.js"></script>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY3ERbNO5IqbS-h75CTJE9ujPXLQHmSjs&map_ids=10bceab29bd1309e&callback=initMap"
-        defer
-      ></script>
+      <div class="cta-container">
+        <button class="contact-btn cta" onclick="downloadVCard()">
+          <span>Add Contact</span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <!-- Socials -->
+      <div class="socials-2">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/dcanterorealtor"
+          class="facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/dcantero.realtor/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/daniel-c-755300180/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="qr-box">
+        <p class="share">Share my card!</p>
+        <img
+          src="./images/qr-mariano-cantero-card-south-jersey1k.png"
+          alt=""
+          class="qr"
+        />
+      </div>
       <!-- Footer -->
       <footer>
         <div class="footer-main">
@@ -168,6 +231,8 @@
         </div>
       </footer>
     </div>
+    <!-- Contact Card Script -->
+    <script src="./js/vcard.js"></script>
     <!-- Mobile Menu Script -->
     <script src="js/index.js"></script>
   </body>
